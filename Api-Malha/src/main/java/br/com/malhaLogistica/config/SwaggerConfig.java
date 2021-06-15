@@ -1,4 +1,4 @@
-package br.com.produtos.apirest.config;
+package br.com.malhaLogistica.config;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package br.com.produtos.apirest;
+package br.com.malhaLogistica;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package br.com.produtos.apirest.services;
+package br.com.malhaLogistica.services;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,11 +6,11 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.produtos.apirest.controller.form.AtualizacaoForm;
-import br.com.produtos.apirest.controller.form.MalhaLogForm;
-import br.com.produtos.apirest.exception.MalhaLogNotFoundException;
-import br.com.produtos.apirest.models.MalhaLogistica;
-import br.com.produtos.apirest.repository.MalhalogRepository;
+import br.com.malhaLogistica.controller.form.AtualizacaoForm;
+import br.com.malhaLogistica.controller.form.MalhaLogForm;
+import br.com.malhaLogistica.exception.MalhaLogNotFoundException;
+import br.com.malhaLogistica.models.MalhaLogistica;
+import br.com.malhaLogistica.repository.MalhalogRepository;
 
 @Service
 public class MalhaLogServiceImpl implements MalhaLogService {

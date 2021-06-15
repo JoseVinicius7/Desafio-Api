@@ -1,4 +1,4 @@
-package br.com.produtos.apirest.exception;
+package br.com.malhaLogistica.exception;
 
 public class MalhaLogNotFoundException extends RuntimeException {
 

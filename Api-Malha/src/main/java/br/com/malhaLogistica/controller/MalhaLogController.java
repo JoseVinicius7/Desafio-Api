@@ -1,4 +1,4 @@
-package br.com.produtos.apirest.controller;
+package br.com.malhaLogistica.controller;
 
 import java.net.URI;
 import java.util.List;
@@ -20,11 +20,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import br.com.produtos.apirest.controller.dto.MalhaLogDto;
-import br.com.produtos.apirest.controller.form.AtualizacaoForm;
-import br.com.produtos.apirest.controller.form.MalhaLogForm;
-import br.com.produtos.apirest.models.MalhaLogistica;
-import br.com.produtos.apirest.services.MalhaLogService;
+import br.com.malhaLogistica.controller.dto.MalhaLogDto;
+import br.com.malhaLogistica.controller.form.AtualizacaoForm;
+import br.com.malhaLogistica.controller.form.MalhaLogForm;
+import br.com.malhaLogistica.models.MalhaLogistica;
+import br.com.malhaLogistica.services.MalhaLogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -50,7 +50,7 @@ public class MalhaLogController {
 		return malhaLogService.findById(id);
 	}
 
-	@ApiOperation(value = "Salva uma Malha")
+	@ApiOperation(value = "Salva uma Malha Logistica")
 	@PostMapping
 	@Transactional
 	public ResponseEntity<MalhaLogDto> cadastrar(@RequestBody @Validated MalhaLogForm form,

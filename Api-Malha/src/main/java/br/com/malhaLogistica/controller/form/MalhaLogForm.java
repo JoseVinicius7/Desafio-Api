@@ -1,12 +1,12 @@
-package br.com.produtos.apirest.controller.form;
+package br.com.malhaLogistica.controller.form;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import com.sun.istack.NotNull;
 
-import br.com.produtos.apirest.controller.dto.MalhaLogDto;
-import br.com.produtos.apirest.models.MalhaLogistica;;
+import br.com.malhaLogistica.controller.dto.MalhaLogDto;
+import br.com.malhaLogistica.models.MalhaLogistica;;
 
 public class MalhaLogForm {
 	

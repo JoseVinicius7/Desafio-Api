@@ -1,4 +1,4 @@
-package br.com.produtos.apirest.models;
+package br.com.malhaLogistica.models;
 
 import java.io.Serializable;
 

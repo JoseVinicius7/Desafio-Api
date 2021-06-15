@@ -1,11 +1,11 @@
-package br.com.produtos.apirest.services;
+package br.com.malhaLogistica.services;
 
 import java.util.List;
 import java.util.Optional;
 
-import br.com.produtos.apirest.controller.form.AtualizacaoForm;
-import br.com.produtos.apirest.controller.form.MalhaLogForm;
-import br.com.produtos.apirest.models.MalhaLogistica;
+import br.com.malhaLogistica.controller.form.AtualizacaoForm;
+import br.com.malhaLogistica.controller.form.MalhaLogForm;
+import br.com.malhaLogistica.models.MalhaLogistica;
 
 public interface MalhaLogService {
 

@@ -1,9 +1,9 @@
-package br.com.produtos.apirest.controller.form;
+package br.com.malhaLogistica.controller.form;
 
 import com.sun.istack.NotNull;
 
-import br.com.produtos.apirest.models.MalhaLogistica;
-import br.com.produtos.apirest.repository.MalhalogRepository;
+import br.com.malhaLogistica.models.MalhaLogistica;
+import br.com.malhaLogistica.repository.MalhalogRepository;
 
 public class AtualizacaoForm {
 
