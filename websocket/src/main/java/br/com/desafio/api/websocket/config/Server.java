@@ -28,13 +28,17 @@ public class Server {
 	}
 
 	// criar stream de entrada e saida
-	// converte entre cliente e servidor
 	private void trataConexao(Socket socket) throws IOException {
 
 		try {
 			ObjectOutputStream output = new ObjectOutputStream(socket.getOutputStream());
 			ObjectInputStream input = new ObjectInputStream(socket.getInputStream());
-
+			
+			// converte entre cliente e servidor
+			System.out.println("Tratando...");
+			output.writeObject(new Object());
+			
+			output.flush();
 			output.close();
 			input.close();
 
@@ -52,6 +56,7 @@ public class Server {
 			System.out.println("Aguardando conexão");
 			server.criarServerSocket(3322);
 			System.out.println("Servidor iniciado na porta 3322");
+			
 			while (true) {
 			Socket socket = server.esperaConexao();
 			System.out.println("Cliente conectado do IP " + socket.getInetAddress().getHostAddress());
