@@ -1,4 +1,4 @@
-package br.com.malhaLogistica.config;
+package br.com.custoTrajeto.config;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import org.springframework.context.annotation.Bean;
@@ -22,13 +22,13 @@ public class SwaggerConfig {
 	@Bean
 	public Docket productApi() {
 		return new Docket(DocumentationType.SWAGGER_2).select()
-				.apis(RequestHandlerSelectors.basePackage("br.com.malhaLogistica")).paths(regex("/malhas.*")).build()
+				.apis(RequestHandlerSelectors.basePackage("br.com.custoTrajeto")).paths(regex("/custo-trajeto.*")).build()
 				.apiInfo(metaInfo());
 	}
 
 	private ApiInfo metaInfo() {
 
-		ApiInfo apiInfo = new ApiInfo("Malha Logistica API REST", "API REST de cadastro e consulta de Malhas Logisticas.", "1.0",
+		ApiInfo apiInfo = new ApiInfo("Custo Trajeto", "Consulta de menor custo por trajeto.", "1.0",
 				"Terms of Service",
 				new Contact("José Vinicius", "jose.vinicius7@hotmail.com", null),
 				"Apache License Version 2.0", "https://www.apache.org/licesen.html", new ArrayList<VendorExtension>());
